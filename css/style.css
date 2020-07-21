@@ -1,0 +1,183 @@
+body{
+	margin: 0;
+    font-family: sans-serif;
+    display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 700px 700px 200px;
+    grid-template-areas: 
+    "header header header "
+    "sec1 sec2 sec3"
+    "footer footer footer";
+
+}
+
+header{
+     grid-area: header;
+     background: linear-gradient(to bottom right,  #018377, transparent), url("../images/dala.jpg") no-repeat center;
+     background-size: cover;
+     
+
+}
+
+nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-top: 20px;
+  padding-right: 200px;
+  
+}
+
+a{
+	 
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+
+}
+
+
+.logo{
+   color: #014052;
+   padding-right: 480px;
+   font-size: 20px;
+
+}
+
+.header-nav:hover{
+  background-color: white;
+  color: black;
+
+
+}
+
+.before-title{
+	margin-top: 125px;
+	margin-bottom: 0;
+	text-transform: capitalize;
+	color: white;
+	text-align: center;
+	font-size: 20px;
+
+}
+
+.title{
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 120px;
+	color: white;
+	text-align: center;
+	text-transform: capitalize;
+
+}
+
+
+.title-definition{
+	margin-top: 15px;
+	font-size: 20px;
+	text-align: center;
+	text-transform: none;
+	color: white;
+}
+
+.sec1{
+	grid-area: sec1;
+	background-image: url("../images/quyosh.jpg");
+	
+}
+.sec2{
+	grid-area: sec2;
+    background-image: url("../images/gilos.jpg");
+	
+}
+.sec3{
+	grid-area: sec3;
+	background-image: url("../images/jojacha.jpg");
+	
+    
+}
+
+.post{
+	
+	margin: 100px 40px 100px 40px;
+	padding-top: 335px;
+	background-size: cover;
+}
+
+
+.post:hover{
+	
+	box-shadow: 0 8px 32px 8px  rgba(17, 22, 26, 0.16), 0 16px 24px 8px rgba(17, 22, 26, 0.08), 0  64px 96px 8px rgba(17, 22, 26, 0.08);
+}
+
+.post-info{
+	padding-left: 10px;
+	height: 135px;
+	background-color: black;
+	opacity: 0.6;
+	color: white;
+
+}
+
+.post-title{
+	padding-top: 10px;
+	text-transform: uppercase;
+}
+
+
+
+.date{
+	
+	text-transform: capitalize;
+}
+
+.link{
+	text-decoration: none;
+	text-transform: capitalize;
+	/*margin-left: 220px;*/
+	padding-left: 0;
+}
+
+.link:hover{
+	
+	color: black;
+	background-color: white; 
+}
+
+footer{
+	grid-area: footer;
+	background-color: black;
+	opacity: 0.8;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+    align-items: center;
+
+}
+
+.footer-contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;	
+}
+
+.footer-nav:hover{
+	text-decoration: underline;
+	text-decoration-color: white;
+}
+
+.footer-links{
+	font-size: 30px;
+
+	
+}
+
+
+
+	
+
+
+
+
